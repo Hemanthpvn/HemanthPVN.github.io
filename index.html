@@ -69,7 +69,7 @@
             display: block;
             position: fixed;
             top: 0; left: 0; bottom: 0; right: 0;
-            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 255, 0, 0.06));
             z-index: 99999;
             background-size: 100% 4px, 6px 100%;
             pointer-events: none;
@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <!-- Desktop Nav Links -->
-                <div class="hidden md:flex items-center space-x-8 text-sm font-mono font-medium">
+                <div class="hidden lg:flex items-center space-x-8 text-sm font-mono font-medium">
                     <a href="#about" class="text-slate-300 hover:text-cyber-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-shield-halved text-xs"></i> Command</a>
                     <a href="#simulator" class="text-slate-300 hover:text-cyber-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-network-wired text-xs"></i> SOAR Playbook</a>
                     <a href="#competencies" class="text-slate-300 hover:text-cyber-primary transition-colors flex items-center gap-2"><i class="fa-solid fa-chart-line text-xs"></i> Visual Metrics</a>
@@ -124,19 +124,19 @@
                     <a href="#terminal" class="px-4 py-2 bg-slate-900 border border-cyber-border hover:border-cyber-primary text-cyber-primary rounded-lg transition-all shadow-md hover:shadow-neon-blue flex items-center gap-2"><i class="fa-solid fa-terminal text-xs"></i> SEC-CON</a>
                 </div>
                 <!-- Mobile Navigation Toggle -->
-                <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none focus:text-white" aria-label="Toggle menu">
+                <button id="mobile-menu-btn" class="lg:hidden text-slate-300 hover:text-white focus:outline-none focus:text-white" aria-label="Toggle menu">
                     <i class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
         <!-- Mobile menu container -->
-        <div id="mobile-menu" class="hidden md:hidden bg-cyber-card border-b border-cyber-border px-4 pt-2 pb-4 space-y-2 font-mono text-sm">
+        <div id="mobile-menu" class="hidden lg:hidden bg-cyber-card border-b border-cyber-border px-4 pt-2 pb-4 space-y-2 font-mono text-sm">
             <a href="#about" class="block py-2 text-slate-300 hover:text-cyber-primary"><i class="fa-solid fa-shield-halved mr-2"></i> Command Center</a>
             <a href="#simulator" class="block py-2 text-slate-300 hover:text-cyber-primary"><i class="fa-solid fa-network-wired mr-2"></i> Playbook Simulator</a>
-            <a href="#competencies" class="block py-2 text-slate-300 hover:text-cyber-primary"><i class="fa-solid fa-chart-line mr-2"></i> Skills Radar</a>
+            <a href="#competencies" class="block py-2 text-slate-300 hover:text-cyber-primary"><i class="fa-solid fa-chart-line mr-2"></i> Visual Metrics</a>
             <a href="#experience" class="block py-2 text-slate-300 hover:text-cyber-primary"><i class="fa-solid fa-timeline mr-2"></i> Chronology</a>
             <a href="#credentials" class="block py-2 text-slate-300 hover:text-cyber-primary"><i class="fa-solid fa-award mr-2"></i> Credentials</a>
-            <a href="#terminal" class="block py-2 text-cyber-primary hover:underline"><i class="fa-solid fa-terminal mr-2"></i> Terminal & Connect</a>
+            <a href="#terminal" class="block py-2 text-cyber-primary hover:underline"><i class="fa-solid fa-terminal mr-2"></i> Secure terminal</a>
         </div>
     </nav>
 
@@ -148,7 +148,7 @@
                 <!-- Left Column: Command Summary & Core Focus -->
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyber-primary/10 border border-cyber-primary/30 text-cyber-primary text-xs font-mono font-medium tracking-wider">
-                        <span class="w-2 h-2 rounded-full bg-cyber-accent animate-pulse"></span> SYSTEM STATUS: ONLINE & DEFENSIBLE
+                        <span class="w-2 h-2 rounded-full bg-cyber-accent animate-pulse"></span> DEFENSE POSTURE: SECURED
                     </div>
                     
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-cyber-primary leading-tight">
@@ -161,7 +161,7 @@
                     </h2>
 
                     <p class="text-slate-400 text-sm sm:text-base leading-relaxed max-w-2xl">
-                        With over <span class="text-white font-semibold">10+ years of cybersecurity leadership</span>, I specialize in transforming legacy incident response into scalable, intelligence-driven autonomous defense systems. Driving automated operations at scale to protect global critical systems.
+                        With over <span class="text-white font-semibold">10+ years of cybersecurity leadership</span> mapped directly in <span class="text-white font-mono">Profile.pdf</span>, I design and deploy autonomous defense systems. Specialized in scaling automated SOAR operating structures, incident remediation, and next-generation SIEM.
                     </p>
 
                     <!-- Fast Stat Grid -->
@@ -186,7 +186,7 @@
                             <i class="fa-solid fa-play text-sm"></i> Launch SOAR Simulation
                         </a>
                         <a href="#competencies" class="px-6 py-3.5 bg-cyber-card border border-cyber-border hover:border-slate-500 text-slate-300 rounded-xl text-center font-semibold transition-all flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-chart-simple text-sm"></i> View Skill Metrics
+                            <i class="fa-solid fa-chart-pie text-sm"></i> View Graphical Skills
                         </a>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                                 <span class="w-3 h-3 rounded-full bg-cyber-warning block"></span>
                                 <span class="w-3 h-3 rounded-full bg-cyber-accent block"></span>
                             </div>
-                            <div class="text-[10px] font-mono text-slate-500 tracking-wider">SEC-CORE-V2.8.5</div>
+                            <div class="text-[10px] font-mono text-slate-500 tracking-wider">SEC-CORE-V2.9.1</div>
                         </div>
 
                         <!-- Live Metrics Screen -->
@@ -283,7 +283,7 @@
                     Agentic Automation Playbook Execution
                 </h2>
                 <p class="text-slate-400 text-sm sm:text-base">
-                    Hemanth designs autonomous SOAR orchestrations that correlate network intelligence and trigger containment in seconds. Run a visual threat response workflow below.
+                    Hemanth designs autonomous SOAR orchestrations that correlate intelligence and trigger containment in seconds. Run a visual threat response workflow below.
                 </p>
             </div>
 
@@ -342,7 +342,7 @@
                             <div class="w-14 h-14 rounded-xl bg-[#0e172a] border border-cyber-border flex items-center justify-center text-slate-500 text-xl transition-all duration-300 shadow-lg" id="node-3-icon">
                                 <i class="fa-solid fa-ban"></i>
                             </div>
-                            <span class="mt-3 font-mono text-xs font-bold text-slate-400 tracking-wide text-center" id="node-3-title">3. containment</span>
+                            <span class="mt-3 font-mono text-xs font-bold text-slate-400 tracking-wide text-center" id="node-3-title">3. Containment</span>
                             <span class="text-[10px] text-slate-500 font-mono mt-0.5 text-center" id="node-3-sub">EDR Endpoint Isolation</span>
                         </div>
 
@@ -416,91 +416,78 @@
                 Core Competency Vectors
             </div>
             <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-                Cybersecurity Leadership & Tactical Domain Expertise
+                Cybersecurity Leadership & Graphical Skill Metrics
             </h2>
             <p class="text-slate-400 text-sm sm:text-base">
-                An advanced multi-dimensional visualization of Hemanth's core skills, strategic command, and technical execution capabilities.
+                An advanced multi-dimensional graphical visualization of Hemanth's core skills, security framework alignment, and tool ecosystems.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <!-- Domain Competency Radar Chart -->
-            <div class="lg:col-span-5 bg-cyber-card border border-cyber-border rounded-2xl p-6 flex flex-col items-center justify-center">
-                <span class="text-xs font-mono text-slate-400 uppercase tracking-widest mb-4">Tactical Matrix</span>
-                <div class="w-full max-w-[340px] aspect-square relative flex items-center justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+            <!-- Left Side: Tactical Radar Map -->
+            <div class="bg-cyber-card border border-cyber-border rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white font-mono mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-compass text-cyber-primary"></i> 1. Tactical Strategy Radar
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-6">
+                        Illustrating high-level program leadership and architectural design capabilities across primary strategic disciplines.
+                    </p>
+                </div>
+                <div class="w-full max-w-[340px] aspect-square mx-auto relative flex items-center justify-center py-4">
                     <canvas id="competenciesRadarChart"></canvas>
                 </div>
                 <div class="mt-4 text-[11px] font-mono text-slate-500 text-center">
-                    Click on legend sectors to isolate specific cybersecurity pillars.
+                    Correlated with enterprise defensive engineering standards.
                 </div>
             </div>
 
-            <!-- Detailed Intersecting Skill Node Ecosystem -->
-            <div class="lg:col-span-7 space-y-6">
-                <h3 class="text-xl font-bold text-white font-mono flex items-center gap-2">
-                    <i class="fa-solid fa-code-fork text-cyber-primary text-base"></i> Security Ecosystem breakdown
-                </h3>
-                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                    Over a decade of operations has allowed Hemanth to command tools, frameworks, and operating architectures to balance corporate risk posture with rapid defense mechanics.
-                </p>
-
-                <!-- Skill Block Categories -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <!-- Category 1: SecOps & Strategy -->
-                    <div class="bg-cyber-card/70 border border-cyber-border hover:border-cyber-primary/40 rounded-xl p-4 transition-all">
-                        <div class="flex items-center gap-2.5 text-cyber-primary mb-3">
-                            <i class="fa-solid fa-building-shield text-base"></i>
-                            <h4 class="font-mono text-sm font-bold text-slate-200">Autonomous SOC Strategy</h4>
+            <!-- Right Side: Beautiful Pie/Doughnut Ecosystem Representation -->
+            <div class="bg-cyber-card border border-cyber-border rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-lg font-bold text-white font-mono mb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-chart-pie text-cyber-secondary"></i> 2. Security Ecosystem breakdown
+                    </h3>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-6">
+                        Interactive allocation of hands-on tools, frameworks, and practical experience distribution. <strong class="text-cyber-accent">Click on the chart segments</strong> below to inspect detailed playbooks and technologies.
+                    </p>
+                </div>
+                
+                <!-- Double layout: Doughnut Chart on left, Details on right -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center my-auto">
+                    <!-- Chart Col -->
+                    <div class="md:col-span-5 relative flex items-center justify-center">
+                        <div class="w-full max-w-[200px] aspect-square">
+                            <canvas id="ecosystemDoughnutChart"></canvas>
                         </div>
-                        <ul class="text-xs text-slate-400 space-y-2 font-mono">
-                            <li class="flex justify-between"><span>SOC Strategy & Governance</span> <span class="text-cyber-accent">Expert</span></li>
-                            <li class="flex justify-between"><span>Risk Posture Evaluation</span> <span class="text-cyber-accent">Expert</span></li>
-                            <li class="flex justify-between"><span>MITRE ATT&CK Mapping</span> <span class="text-cyber-accent">Advanced</span></li>
-                            <li class="flex justify-between"><span>Operating Models</span> <span class="text-cyber-accent">Leader</span></li>
-                        </ul>
                     </div>
-
-                    <!-- Category 2: Automation Engines -->
-                    <div class="bg-cyber-card/70 border border-cyber-border hover:border-cyber-primary/40 rounded-xl p-4 transition-all">
-                        <div class="flex items-center gap-2.5 text-cyber-secondary mb-3">
-                            <i class="fa-solid fa-robot text-base"></i>
-                            <h4 class="font-mono text-sm font-bold text-slate-200">Agentic Automation</h4>
+                    <!-- Inspector panel column -->
+                    <div class="md:col-span-7 bg-[#070b18] border border-cyber-border/40 rounded-xl p-4 min-h-[190px] flex flex-col justify-between">
+                        <div id="inspector-toolset">
+                            <div class="flex items-center gap-2 text-cyber-accent mb-2">
+                                <i id="inspector-icon" class="fa-solid fa-robot"></i>
+                                <h4 id="inspector-title" class="font-mono text-sm font-bold text-slate-200">Agentic Automation</h4>
+                            </div>
+                            <p id="inspector-desc" class="text-xs text-slate-400 leading-relaxed mb-3">
+                                Building autonomous frameworks, parsing custom threat telemetry, and implementing resilient security orchestration.
+                            </p>
+                            <!-- Tool Tags list -->
+                            <div class="flex flex-wrap gap-1.5" id="inspector-tags">
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyber-secondary/15 border border-cyber-secondary/30 text-slate-300">SOAR Playbooks</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyber-secondary/15 border border-cyber-secondary/30 text-slate-300">LUA Parsers</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyber-secondary/15 border border-cyber-secondary/30 text-slate-300">CEF Integration</span>
+                                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-cyber-secondary/15 border border-cyber-secondary/30 text-slate-300">Python Scripting</span>
+                            </div>
                         </div>
-                        <ul class="text-xs text-slate-400 space-y-2 font-mono">
-                            <li class="flex justify-between"><span>Agentic Workflows</span> <span class="text-cyber-accent">Expert</span></li>
-                            <li class="flex justify-between"><span>SOAR Playbook Dev</span> <span class="text-cyber-accent">Expert</span></li>
-                            <li class="flex justify-between"><span>Remediation Scripts</span> <span class="text-cyber-accent">Advanced</span></li>
-                            <li class="flex justify-between"><span>LUA & CEF Parsers</span> <span class="text-cyber-accent">Advanced</span></li>
-                        </ul>
-                    </div>
-
-                    <!-- Category 3: Detection Platforms -->
-                    <div class="bg-cyber-card/70 border border-cyber-border hover:border-cyber-primary/40 rounded-xl p-4 transition-all">
-                        <div class="flex items-center gap-2.5 text-cyber-warning mb-3">
-                            <i class="fa-solid fa-magnifying-glass-chart text-base"></i>
-                            <h4 class="font-mono text-sm font-bold text-slate-200">Detection & Telemetry</h4>
+                        <div class="border-t border-cyber-border/40 pt-2.5 mt-2.5 flex justify-between items-center text-[10px] font-mono text-slate-500">
+                            <span>FOCUS WEIGHT: <strong class="text-white" id="inspector-weight">30%</strong></span>
+                            <span>Active System</span>
                         </div>
-                        <ul class="text-xs text-slate-400 space-y-2 font-mono">
-                            <li class="flex justify-between"><span>Next-Gen SIEM & Splunk ES</span> <span class="text-cyber-accent">Expert</span></li>
-                            <li class="flex justify-between"><span>UEBA & Asset Risk</span> <span class="text-cyber-accent">Advanced</span></li>
-                            <li class="flex justify-between"><span>EDR / IDS / DLP</span> <span class="text-cyber-accent">Expert</span></li>
-                            <li class="flex justify-between"><span>Deep Packet Inspection</span> <span class="text-cyber-accent">Advanced</span></li>
-                        </ul>
                     </div>
+                </div>
 
-                    <!-- Category 4: Threat Intelligence -->
-                    <div class="bg-cyber-card/70 border border-cyber-border hover:border-cyber-primary/40 rounded-xl p-4 transition-all">
-                        <div class="flex items-center gap-2.5 text-cyber-danger mb-3">
-                            <i class="fa-solid fa-spider text-base"></i>
-                            <h4 class="font-mono text-sm font-bold text-slate-200">Incident & Threat Mgmt</h4>
-                        </div>
-                        <ul class="text-xs text-slate-400 space-y-2 font-mono">
-                            <li class="flex justify-between"><span>Incident Response Ops</span> <span class="text-cyber-accent">Expert</span></li>
-                            <li class="flex justify-between"><span>Threat Hunting Program</span> <span class="text-cyber-accent">Advanced</span></li>
-                            <li class="flex justify-between"><span>Breach & Attack Sim</span> <span class="text-cyber-accent">Advanced</span></li>
-                            <li class="flex justify-between"><span>Digital Risk Control</span> <span class="text-cyber-accent">Advanced</span></li>
-                        </ul>
-                    </div>
+                <div class="mt-4 text-[11px] font-mono text-slate-500 text-center">
+                    Select distinct categories to explore specific tooling capabilities.
                 </div>
             </div>
         </div>
@@ -516,7 +503,7 @@
                     A Decadal Evolution in Cyber Operations
                 </h2>
                 <p class="text-slate-400 text-sm sm:text-base">
-                    From deep-technical investigation and packet analysis to defining cyber automation roadmap strategies as an executive.
+                    From deep-technical investigation and packet analysis to defining cyber automation roadmap strategies as an executive at Synchrony.
                 </p>
             </div>
 
@@ -561,7 +548,7 @@
                         <span class="inline-block px-3 py-1 rounded-md bg-cyber-secondary/15 border border-cyber-secondary/40 text-cyber-secondary text-xs font-mono font-bold tracking-wide mb-2">Nov 2020 - Dec 2021 (1 yr 2 mos)</span>
                         <h3 class="text-xl font-bold text-white">Senior IR Engineer, Cyber Operations</h3>
                         <h4 class="text-cyber-accent font-mono text-sm mt-0.5">Synchrony</h4>
-                        <span class="text-xs text-slate-500 font-mono mt-1">Hyderabad, India</span>
+                        <span class="text-xs text-slate-500 font-mono mt-1">Hyderabad, Telangana, India</span>
                     </div>
 
                     <!-- Left Job Narrative -->
@@ -587,7 +574,7 @@
                         <span class="inline-block px-3 py-1 rounded-md bg-cyber-accent/15 border border-cyber-accent/40 text-cyber-accent text-xs font-mono font-bold tracking-wide mb-2">Nov 2018 - Nov 2020 (2 yrs 1 mo)</span>
                         <h3 class="text-xl font-bold text-white">Security Engineer, Cyber Operations</h3>
                         <h4 class="text-cyber-accent font-mono text-sm mt-0.5">Synchrony</h4>
-                        <span class="text-xs text-slate-500 font-mono mt-1">Hyderabad, India</span>
+                        <span class="text-xs text-slate-500 font-mono mt-1">Hyderabad, Telangana, India</span>
                     </div>
 
                     <!-- Right Job Narrative -->
@@ -610,7 +597,7 @@
                     
                     <!-- Right Job Detail Card -->
                     <div class="w-full md:w-[46%] pl-6 md:pl-0 md:text-left flex flex-col md:items-start">
-                        <span class="inline-block px-3 py-1 rounded-md bg-slate-800 text-slate-400 text-xs font-mono font-bold tracking-wide mb-2">July 2016 - Nov 2018 (2 yrs 4 mos)</span>
+                        <span class="inline-block px-3 py-1 rounded-md bg-slate-800 text-slate-400 text-xs font-mono font-bold tracking-wide mb-2">July 2016 - April 2018 (1 yr 10 mos)</span>
                         <h3 class="text-xl font-bold text-white">Incident Response Analyst & Forensics</h3>
                         <h4 class="text-cyber-accent font-mono text-sm mt-0.5">Anthelio Healthcare / JSOC</h4>
                         <span class="text-xs text-slate-500 font-mono mt-1">Gachibowli, Hyderabad, India</span>
@@ -757,94 +744,52 @@
                     Establish Secure Transmission
                 </h2>
                 <p class="text-slate-400 text-sm sm:text-base">
-                    Execute command prompts inside the active SOC emulator below to retrieve validated pathways or forward secure messages.
+                    No static form cards. Use the secure terminal interface below to run operations or compile and transmit a direct email message payload.
                 </p>
             </div>
 
-            <!-- Terminal Matrix Frame -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch max-w-5xl mx-auto">
-                
-                <!-- Command Line Console -->
-                <div class="lg:col-span-7 bg-black border border-cyber-border/80 rounded-2xl p-5 shadow-2xl flex flex-col justify-between">
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between border-b border-cyber-border/60 pb-3">
-                            <div class="flex items-center space-x-2">
-                                <span class="w-2.5 h-2.5 rounded-full bg-cyber-accent animate-pulse block"></span>
-                                <span class="text-[11px] font-mono text-cyber-accent tracking-wide uppercase">HEMANTH-RECON.SHELL (v1.2.9)</span>
-                            </div>
-                            <span class="text-[10px] text-slate-500 font-mono">HYDERABAD, IN</span>
+            <!-- Single Full-Width Terminal Hub Frame -->
+            <div class="max-w-4xl mx-auto bg-black border border-cyber-border/80 rounded-2xl p-6 shadow-2xl flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between border-b border-cyber-border/60 pb-3">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-2.5 h-2.5 rounded-full bg-cyber-accent animate-pulse block"></span>
+                            <span class="text-[11px] font-mono text-cyber-accent tracking-wide uppercase">HEMANTH-RECON.SHELL (v2.0.0-PRO)</span>
                         </div>
-                        
-                        <!-- Terminal Commands Log Area -->
-                        <div id="cmd-history" class="space-y-3 font-mono text-xs text-slate-400 min-h-[220px] max-h-[300px] overflow-y-auto pr-1">
-                            <div><span class="text-cyber-accent">$</span> <span class="text-white">help</span></div>
-                            <div class="text-slate-500">Available commands:</div>
-                            <div class="grid grid-cols-2 gap-x-4 gap-y-1 text-slate-500 max-w-sm">
-                                <span>• <strong class="text-cyber-primary">about</strong> - Hemanth's summary</span>
-                                <span>• <strong class="text-cyber-primary">contact</strong> - Get direct connections</span>
-                                <span>• <strong class="text-cyber-primary">skills</strong> - Domain list summary</span>
-                                <span>• <strong class="text-cyber-primary">clear</strong> - Reset screen view</span>
-                            </div>
-                        </div>
+                        <span class="text-[10px] text-slate-500 font-mono">HYDERABAD // SECURE GATEWAY</span>
                     </div>
-
-                    <!-- Input Console Prompt -->
-                    <div class="mt-4 pt-3 border-t border-cyber-border/60 flex items-center gap-2">
-                        <span class="text-cyber-accent font-mono text-sm">$</span>
-                        <input id="terminal-input" type="text" placeholder="Type command (about, contact, skills, clear)..." class="flex-1 bg-transparent border-none outline-none focus:ring-0 text-white font-mono text-sm" onkeydown="handleTerminalSubmit(event)">
-                        <button onclick="executeTerminalCommand()" class="text-xs font-mono px-3 py-1.5 bg-slate-900 border border-cyber-border/80 hover:border-cyber-primary rounded text-slate-300">Run</button>
+                    
+                    <!-- Terminal Output Window -->
+                    <div id="cmd-history" class="space-y-3 font-mono text-xs text-slate-400 min-h-[300px] max-h-[400px] overflow-y-auto pr-2">
+                        <div><span class="text-cyber-accent">$</span> <span class="text-white">help</span></div>
+                        <div class="text-slate-500">Available directory commands:</div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-1.5 text-slate-500 max-w-2xl">
+                            <span>• <strong class="text-cyber-primary">about</strong>   - Read profile summary (from Profile.pdf)</span>
+                            <span>• <strong class="text-cyber-primary">contact</strong> - Output direct channels (Email, Phone, Location)</span>
+                            <span>• <strong class="text-cyber-primary">skills</strong>  - Display key security competency summary</span>
+                            <span>• <strong class="text-cyber-primary">message</strong> - Initiate interactive secure message dispatcher</span>
+                            <span>• <strong class="text-cyber-primary">clear</strong>   - Reset console buffer and history</span>
+                        </div>
+                        <div class="text-slate-500 mt-2">// Ready for ingestion. Select a command chip or type manually.</div>
                     </div>
                 </div>
 
-                <!-- Direct Contact Details Card / Form -->
-                <div class="lg:col-span-5 bg-cyber-card border border-cyber-border rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
-                    <div class="absolute -top-10 -right-10 w-36 h-36 bg-cyber-primary/10 rounded-full blur-2xl"></div>
-                    <div class="space-y-5 relative z-10">
-                        <h3 class="text-lg font-bold text-white font-mono flex items-center gap-2"><i class="fa-solid fa-address-book text-cyber-primary"></i> Contact Channels</h3>
-                        
-                        <!-- Details -->
-                        <div class="space-y-3.5 text-xs font-mono">
-                            <div class="flex items-center gap-3.5 p-3 bg-slate-950/70 border border-cyber-border/40 rounded-xl">
-                                <i class="fa-solid fa-map-location-dot text-cyber-accent text-base"></i>
-                                <div>
-                                    <span class="text-slate-500 text-[10px] uppercase block">Location</span>
-                                    <span class="text-slate-200">Hyderabad, Telangana, India</span>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3.5 p-3 bg-slate-950/70 border border-cyber-border/40 rounded-xl">
-                                <i class="fa-solid fa-envelope text-cyber-primary text-base"></i>
-                                <div>
-                                    <span class="text-slate-500 text-[10px] uppercase block">Direct Secure Mail</span>
-                                    <a href="mailto:hemanthpasumarthi8@gmail.com" class="text-slate-200 hover:text-cyber-primary transition-colors">hemanthpasumarthi8@gmail.com</a>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3.5 p-3 bg-slate-950/70 border border-cyber-border/40 rounded-xl">
-                                <i class="fa-solid fa-phone text-cyber-secondary text-base"></i>
-                                <div>
-                                    <span class="text-slate-500 text-[10px] uppercase block">Mobile Operations</span>
-                                    <a href="tel:+919030504142" class="text-slate-200 hover:text-cyber-primary transition-colors">+91 9030504142</a>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-3.5 p-3 bg-slate-950/70 border border-cyber-border/40 rounded-xl">
-                                <i class="fa-brands fa-linkedin text-cyber-primary text-base"></i>
-                                <div>
-                                    <span class="text-slate-500 text-[10px] uppercase block">Professional Sync Link</span>
-                                    <a href="https://www.linkedin.com/in/hemanthpvn" target="_blank" rel="noopener noreferrer" class="text-slate-200 hover:text-cyber-primary hover:underline transition-colors">linkedin.com/in/hemanthpvn</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Visual Security Footer Signature inside the card -->
-                    <div class="pt-6 mt-6 border-t border-cyber-border text-[10px] font-mono text-slate-500 flex justify-between items-center relative z-10">
-                        <span>DATA ENCRYPTED SHA-256</span>
-                        <div class="flex gap-1.5 text-xs">
-                            <a href="https://www.linkedin.com/in/hemanthpvn" target="_blank" class="hover:text-white" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                            <a href="mailto:hemanthpasumarthi8@gmail.com" class="hover:text-white" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-                        </div>
-                    </div>
+                <!-- Fast Shortcut Commands Panel -->
+                <div class="mt-4 flex flex-wrap gap-2 pb-3 border-b border-cyber-border/40">
+                    <span class="text-[10px] text-slate-500 font-mono flex items-center mr-1">QUICK OPS:</span>
+                    <button onclick="sendQuickCommand('about')" class="px-2.5 py-1 text-[11px] font-mono rounded bg-cyber-primary/10 border border-cyber-primary/30 text-cyber-primary hover:bg-cyber-primary/20 transition-all">about</button>
+                    <button onclick="sendQuickCommand('contact')" class="px-2.5 py-1 text-[11px] font-mono rounded bg-cyber-secondary/10 border border-cyber-secondary/30 text-cyber-secondary hover:bg-cyber-secondary/20 transition-all">contact</button>
+                    <button onclick="sendQuickCommand('skills')" class="px-2.5 py-1 text-[11px] font-mono rounded bg-cyber-accent/10 border border-cyber-accent/30 text-cyber-accent hover:bg-cyber-accent/20 transition-all">skills</button>
+                    <button onclick="sendQuickCommand('message')" class="px-2.5 py-1 text-[11px] font-mono rounded bg-cyber-warning/10 border border-cyber-warning/30 text-cyber-warning hover:bg-cyber-warning/20 transition-all">message wizard</button>
+                    <button onclick="sendQuickCommand('clear')" class="px-2.5 py-1 text-[11px] font-mono rounded bg-slate-900 border border-cyber-border text-slate-400 hover:text-white transition-all">clear</button>
                 </div>
 
+                <!-- Terminal Input Frame -->
+                <div class="mt-4 pt-3 flex items-center gap-2">
+                    <span class="text-cyber-accent font-mono text-sm">$</span>
+                    <input id="terminal-input" type="text" placeholder="Type command (about, contact, skills, message, clear)..." class="flex-1 bg-transparent border-none outline-none focus:ring-0 text-white font-mono text-sm placeholder-slate-600" onkeydown="handleTerminalSubmit(event)">
+                    <button onclick="executeTerminalCommand()" class="text-xs font-mono px-4 py-2 bg-slate-900 border border-cyber-border hover:border-cyber-primary rounded text-slate-200 transition-all hover:shadow-neon-blue">Execute</button>
+                </div>
             </div>
         </div>
     </section>
@@ -853,7 +798,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500">
             <div class="flex items-center gap-2">
                 <span class="w-2 h-2 rounded-full bg-cyber-accent"></span>
-                <span>© 2026 Hemanth Pasumarthi. All strategic defenses reserved.</span>
+                <span>© 2026 Hemanth Pasumarthi. All defenses fully functional.</span>
             </div>
             <div class="flex gap-4">
                 <a href="#about" class="hover:text-cyber-primary transition-colors">Back to Hero</a>
@@ -962,7 +907,6 @@
         }
 
         function resetSimulation() {
-            // Clear running timers
             activeTimeoutIds.forEach(id => clearTimeout(id));
             activeTimeoutIds = [];
             if (simulationInterval) {
@@ -970,24 +914,18 @@
                 simulationInterval = null;
             }
 
-            // Reset node icon styling to default dark
             for (let i = 1; i <= 4; i++) {
                 const iconBox = document.getElementById(`node-${i}-icon`);
                 iconBox.className = "w-14 h-14 rounded-xl bg-[#0e172a] border border-cyber-border flex items-center justify-center text-slate-500 text-xl transition-all duration-300 shadow-lg";
-                
-                // Keep first node indicator colored
                 if (i === 1) {
                     iconBox.classList.remove('text-slate-500');
                     iconBox.classList.add('text-cyber-warning');
                 }
             }
 
-            // Reset progress bar
             document.getElementById('sim-progress-bar').style.width = '0%';
             document.getElementById('speed-indicator').innerText = 'Idle';
             document.getElementById('speed-indicator').className = 'text-xs font-mono text-slate-500 font-semibold';
-
-            // Reset console text
             document.getElementById('sim-terminal').innerHTML = `<div class="text-slate-500">// System ready. Click 'Run Simulation' to initiate telemetry ingestion.</div>`;
         }
 
@@ -995,15 +933,13 @@
             resetSimulation();
             const data = playbookScenarios[currentScenario];
             const terminal = document.getElementById('sim-terminal');
-            terminal.innerHTML = ""; // Clear existing screen output
+            terminal.innerHTML = ""; 
             
             document.getElementById('speed-indicator').innerText = 'RUNNING';
             document.getElementById('speed-indicator').className = 'text-xs font-mono text-cyber-primary font-bold animate-pulse';
 
-            // Iterate and inject log segments
             data.logs.forEach((log, index) => {
                 const timeoutId = setTimeout(() => {
-                    // Update log text line
                     const logLine = document.createElement('div');
                     
                     if (log.includes('[INGESTION]')) {
@@ -1031,7 +967,7 @@
 
                     logLine.innerText = log;
                     terminal.appendChild(logLine);
-                    terminal.scrollTop = terminal.scrollHeight; // Keep scrolling bottom
+                    terminal.scrollTop = terminal.scrollHeight;
                 }, index * 1200);
 
                 activeTimeoutIds.push(timeoutId);
@@ -1039,12 +975,10 @@
         }
 
         function highlightNode(nodeNum, classes) {
-            // Set all preceding nodes to safe accent (green)
             for (let i = 1; i < nodeNum; i++) {
                 const iconBox = document.getElementById(`node-${i}-icon`);
                 iconBox.className = "w-14 h-14 rounded-xl bg-cyber-accent/15 border border-cyber-accent text-cyber-accent flex items-center justify-center text-xl transition-all duration-300 shadow-lg";
             }
-            // Set current node style
             const currentNode = document.getElementById(`node-${nodeNum}-icon`);
             currentNode.className = `w-14 h-14 rounded-xl flex items-center justify-center text-xl transition-all duration-300 shadow-lg ${classes}`;
         }
@@ -1053,12 +987,71 @@
             document.getElementById('sim-progress-bar').style.width = `${percentage}%`;
         }
 
-        // --- CHARTJS IMPLEMENTATION: CORE COMPETENCIES ---
+        // --- INTERACTIVE GRAPHICAL ECOSYSTEM BREAKDOWN (DOUGHNUT DATA) ---
+        const ecosystemData = {
+            automation: {
+                title: "Agentic Automation",
+                icon: "fa-robot",
+                desc: "Hemanth commands leading orchestration environments. Building autonomous workflows, parsing custom threat telemetry, and executing end-to-end incident mitigation script layers.",
+                weight: "30%",
+                color: "#8b5cf6",
+                tags: ["SOAR Playbooks", "LUA Parsers", "CEF Integration", "Python Scripting", "API Security Orchestration"]
+            },
+            detection: {
+                title: "Detection & Telemetry",
+                icon: "fa-magnifying-glass-chart",
+                desc: "Continuous log integration, correlation search configurations, and baseline behavioral models to maintain maximum environment visibility.",
+                weight: "25%",
+                color: "#3b82f6",
+                tags: ["Splunk ES Expert", "UEBA Engines", "Deep Packet Inspection (DPI)", "Signature Engineering"]
+            },
+            incident: {
+                title: "Incident Response Ops",
+                icon: "fa-spider",
+                desc: "Rapid containments, root-cause diagnostics, and advanced threat hunts. Managing cyber attack containment windows down to a few critical seconds.",
+                weight: "25%",
+                color: "#ef4444",
+                tags: ["Host Isolation (EDR)", "Active Threat Hunting", "Autopsy Forensics", "After-Action Reporting"]
+            },
+            strategy: {
+                title: "SOC Strategy & Governance",
+                icon: "fa-building-shield",
+                desc: "Defining defense structures, modeling cross-organizational operating metrics, managing team capabilities, and aligning security frameworks with business risk.",
+                weight: "20%",
+                color: "#10b981",
+                tags: ["MITRE ATT&CK Mapping", "Breach Simulation (BAS)", "Risk Posture Control", "SOAR Operating Models"]
+            }
+        };
+
+        function updateInspectorPanel(categoryKey) {
+            const info = ecosystemData[categoryKey];
+            if (!info) return;
+
+            document.getElementById('inspector-title').innerText = info.title;
+            document.getElementById('inspector-desc').innerText = info.desc;
+            document.getElementById('inspector-weight').innerText = info.weight;
+
+            const iconEl = document.getElementById('inspector-icon');
+            iconEl.className = `fa-solid ${info.icon}`;
+            iconEl.style.color = info.color;
+
+            // Redraw tags list
+            const tagsContainer = document.getElementById('inspector-tags');
+            tagsContainer.innerHTML = "";
+            info.tags.forEach(tag => {
+                const badge = document.createElement('span');
+                badge.className = "px-2 py-0.5 rounded text-[10px] font-mono bg-slate-900 border text-slate-300 transition-colors";
+                badge.style.borderColor = `${info.color}50`;
+                badge.innerText = tag;
+                tagsContainer.appendChild(badge);
+            });
+        }
+
+        // --- CHARTS IMPLEMENTATION: RADAR & DOUGHNUT ---
         window.addEventListener('load', () => {
-            const ctx = document.getElementById('competenciesRadarChart').getContext('2d');
-            
-            // Premium custom radar styling options
-            const radarChart = new Chart(ctx, {
+            // Radar Chart setup
+            const ctxRadar = document.getElementById('competenciesRadarChart').getContext('2d');
+            const radarChart = new Chart(ctxRadar, {
                 type: 'radar',
                 data: {
                     labels: [
@@ -1070,9 +1063,9 @@
                         'Cloud Security & Architecture'
                     ],
                     datasets: [{
-                        label: 'Hemanth Pasumarthi Expertise Levels',
+                        label: 'Defense Capabilities Map',
                         data: [98, 92, 95, 90, 88, 85],
-                        backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                        backgroundColor: 'rgba(59, 130, 246, 0.15)',
                         borderColor: '#3b82f6',
                         borderWidth: 2,
                         pointBackgroundColor: '#8b5cf6',
@@ -1085,31 +1078,50 @@
                     responsive: true,
                     maintainAspectRatio: false,
                     plugins: {
-                        legend: {
-                            display: false, // Cleaner presentation
-                        }
+                        legend: { display: false }
                     },
                     scales: {
                         r: {
-                            angleLines: {
-                                color: 'rgba(30, 41, 59, 0.5)'
-                            },
-                            grid: {
-                                color: 'rgba(30, 41, 59, 0.5)'
-                            },
+                            angleLines: { color: 'rgba(30, 41, 59, 0.5)' },
+                            grid: { color: 'rgba(30, 41, 59, 0.5)' },
                             pointLabels: {
                                 color: '#94a3b8',
-                                font: {
-                                    family: 'JetBrains Mono',
-                                    size: 10
-                                }
+                                font: { family: 'JetBrains Mono', size: 9 }
                             },
-                            ticks: {
-                                display: false,
-                                maxTicksLimit: 5
-                            },
+                            ticks: { display: false, maxTicksLimit: 5 },
                             suggestedMin: 50,
                             suggestedMax: 100
+                        }
+                    }
+                }
+            });
+
+            // Doughnut Chart setup
+            const ctxDoughnut = document.getElementById('ecosystemDoughnutChart').getContext('2d');
+            const doughnutChart = new Chart(ctxDoughnut, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Agentic Automation', 'Detection & Telemetry', 'Incident Response Ops', 'SOC Strategy & Governance'],
+                    datasets: [{
+                        data: [30, 25, 25, 20],
+                        backgroundColor: ['#8b5cf6', '#3b82f6', '#ef4444', '#10b981'],
+                        borderColor: '#05070f',
+                        borderWidth: 3,
+                        hoverOffset: 6
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '65%',
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    onClick: (event, elements) => {
+                        if (elements && elements.length > 0) {
+                            const elementIndex = elements[0].index;
+                            const keys = ['automation', 'detection', 'incident', 'strategy'];
+                            updateInspectorPanel(keys[elementIndex]);
                         }
                     }
                 }
@@ -1137,31 +1149,41 @@
             }, 5000);
         });
 
-        // --- COMMAND LINE TERMINAL INTERACTIVE SHELL ---
+        // --- COMMAND LINE TERMINAL INTERACTIVE SHELL WITH SECURE MESSAGE WIZARD ---
         const terminalLogs = {
-            about: `[SUMMARY]
-I lead security automation and operations with a focus on transforming incident response into scalable, intelligence-driven defense capabilities. Over 10+ years in cybersecurity, progression from IR engineer to leading threat detection and SOAR operating strategies. Currently driving security operations strategy at Synchrony.`,
-            contact: `[CONTACT PORTALS]
--------------------------------------------------------
-• Mobile Secure Line: +91 9030504142
-• Email Link: hemanthpasumarthi8@gmail.com
-• Location: Hyderabad, Telangana, India
-• LinkedIn: https://www.linkedin.com/in/hemanthpvn
--------------------------------------------------------`,
-            skills: `[TACTICAL COMPETENCIES]
--------------------------------------------------------
-• Agentic Workflows & SOAR Auto-remediations
-• SIEM (Next-Gen, Splunk ES developer)
-• Threat Hunting, Detection, & Deep Packet Inspection
-• Cloud Security Architecture & Governance
-• Risk Posture, Forensics & ATT&CK Framework
--------------------------------------------------------`,
-            help: `Available commands:
-• 'about'    - View Hemanth's summary bio
-• 'contact'  - Print active verified touchpoints
-• 'skills'   - Display categorized technical skills
-• 'clear'    - Reset command log screen`
+            about: `[SUMMARY DIRECTORY - REFERENCING PROFILE.PDF]
+---------------------------------------------------------------------------------
+AVP of Security Operations with over 10+ years of cybersecurity leadership.
+Specializes in transitioning legacy operational response into autonomous,
+fully automated defense structures. Currently driving active detection capabilities,
+governance models, and SOAR infrastructure globally.`,
+            contact: `[VERIFIED SECURE CHANNELS]
+---------------------------------------------------------------------------------
+• Direct Secure Email : hemanthpasumarthi8@gmail.com
+• Secure Operations   : +91 9030504142 (Mobile Operations)
+• Command Hub Location: Hyderabad, Telangana, India
+• Professional Link   : https://www.linkedin.com/in/hemanthpvn (LinkedIn)`,
+            skills: `[TACTICAL CAPABILITY MATRICES]
+---------------------------------------------------------------------------------
+• Agentic Frameworks  : Automation Playbooks, Custom LUA and CEF Telemetry Parsers
+• Detection Systems   : Splunk Enterprise Security, UEBA, Deep Packet Inspection (DPI)
+• Operational Core    : EDR Host Isolation, Autopsy Forensics, Penetration Remediation`
         };
+
+        // State machine for step-by-step terminal secure message wizard
+        let messageWizardState = {
+            active: false,
+            step: 0,
+            name: "",
+            email: "",
+            content: ""
+        };
+
+        function sendQuickCommand(cmd) {
+            const inputField = document.getElementById('terminal-input');
+            inputField.value = cmd;
+            executeTerminalCommand();
+        }
 
         function handleTerminalSubmit(event) {
             if (event.key === 'Enter') {
@@ -1172,18 +1194,42 @@ I lead security automation and operations with a focus on transforming incident 
         function executeTerminalCommand() {
             const inputEl = document.getElementById('terminal-input');
             const historyEl = document.getElementById('cmd-history');
-            const command = inputEl.value.trim().toLowerCase();
+            const rawValue = inputEl.value.trim();
+            const command = rawValue.toLowerCase();
             
-            if (command === '') return;
+            if (rawValue === '') return;
 
-            // Log prompt submission line
+            // Append input directly into terminal history
             const userLine = document.createElement('div');
             userLine.className = 'text-white flex items-center gap-1.5 mt-2';
-            userLine.innerHTML = `<span class="text-cyber-accent">$</span> <span>${command}</span>`;
+            userLine.innerHTML = `<span class="text-cyber-accent">$</span> <span>${rawValue}</span>`;
             historyEl.appendChild(userLine);
 
+            // Clear input field immediately
+            inputEl.value = '';
+
+            // Handle Message Wizard Session
+            if (messageWizardState.active) {
+                handleWizardStep(rawValue, historyEl);
+                historyEl.scrollTop = historyEl.scrollHeight;
+                return;
+            }
+
+            // Normal Terminal Command Execution
             if (command === 'clear') {
                 historyEl.innerHTML = "";
+            } else if (command === 'help') {
+                const helpEl = document.createElement('div');
+                helpEl.className = 'text-slate-500 mt-1';
+                helpEl.innerHTML = `Available directory commands:
+• <strong class="text-cyber-primary">about</strong>   - Read profile summary (from Profile.pdf)
+• <strong class="text-cyber-primary">contact</strong> - Output direct channels (Email, Phone, Location)
+• <strong class="text-cyber-primary">skills</strong>  - Display key security competency summary
+• <strong class="text-cyber-primary">message</strong> - Initiate interactive secure message dispatcher
+• <strong class="text-cyber-primary">clear</strong>   - Reset console buffer and history`;
+                historyEl.appendChild(helpEl);
+            } else if (command === 'message') {
+                startSecureMessageWizard(historyEl);
             } else if (terminalLogs[command]) {
                 const respLine = document.createElement('pre');
                 respLine.className = 'text-slate-400 mt-1 whitespace-pre-wrap font-mono text-xs leading-relaxed';
@@ -1192,12 +1238,82 @@ I lead security automation and operations with a focus on transforming incident 
             } else {
                 const errLine = document.createElement('div');
                 errLine.className = 'text-cyber-danger mt-1';
-                errLine.innerText = `Command not recognized: '${command}'. Type 'help' to review directory listings.`;
+                errLine.innerText = `Command not recognized: '${rawValue}'. Type 'help' to review directory listings.`;
                 historyEl.appendChild(errLine);
             }
 
-            inputEl.value = '';
             historyEl.scrollTop = historyEl.scrollHeight;
+        }
+
+        function startSecureMessageWizard(historyEl) {
+            messageWizardState.active = true;
+            messageWizardState.step = 1;
+            messageWizardState.name = "";
+            messageWizardState.email = "";
+            messageWizardState.content = "";
+
+            const startLine = document.createElement('div');
+            startLine.className = 'text-cyber-warning font-semibold mt-1';
+            startLine.innerHTML = `<i class="fa-solid fa-key animate-pulse"></i> INITIATING SECURE TRANSMISSION HANDSHAKE (AES-256)...`;
+            historyEl.appendChild(startLine);
+
+            const promptLine = document.createElement('div');
+            promptLine.className = 'text-white font-bold mt-1';
+            promptLine.innerText = `STEP 1: Enter your Name or Organization:`;
+            historyEl.appendChild(promptLine);
+        }
+
+        function handleWizardStep(value, historyEl) {
+            if (messageWizardState.step === 1) {
+                messageWizardState.name = value;
+                messageWizardState.step = 2;
+
+                const nextPrompt = document.createElement('div');
+                nextPrompt.className = 'text-white font-bold mt-2';
+                nextPrompt.innerText = `STEP 2: Enter your Email Address (Secure Reply Route):`;
+                historyEl.appendChild(nextPrompt);
+            } else if (messageWizardState.step === 2) {
+                // Quick basic validator
+                if (!value.includes('@') || !value.includes('.')) {
+                    const errorPrompt = document.createElement('div');
+                    errorPrompt.className = 'text-cyber-danger mt-1';
+                    errorPrompt.innerText = `Invalid email format. Please provide a standard address:`;
+                    historyEl.appendChild(errorPrompt);
+                    return;
+                }
+                messageWizardState.email = value;
+                messageWizardState.step = 3;
+
+                const nextPrompt = document.createElement('div');
+                nextPrompt.className = 'text-white font-bold mt-2';
+                nextPrompt.innerText = `STEP 3: Type your message or collaboration payload:`;
+                historyEl.appendChild(nextPrompt);
+            } else if (messageWizardState.step === 3) {
+                messageWizardState.content = value;
+                messageWizardState.active = false; // complete wizard
+
+                const processLine1 = document.createElement('div');
+                processLine1.className = 'text-slate-500 mt-2';
+                processLine1.innerText = `// Compiling data packets from secure gateway...`;
+                historyEl.appendChild(processLine1);
+
+                setTimeout(() => {
+                    const processLine2 = document.createElement('div');
+                    processLine2.className = 'text-slate-400';
+                    processLine2.innerText = `// Encrypting body payload with SHA-256 handshake standard... Done.`;
+                    historyEl.appendChild(processLine2);
+
+                    const successBox = document.createElement('div');
+                    successBox.className = 'p-3 bg-cyber-accent/10 border border-cyber-accent rounded-lg mt-3 text-cyber-accent space-y-1';
+                    successBox.innerHTML = `
+                        <div class="font-bold flex items-center gap-2"><i class="fa-solid fa-circle-check"></i> SECURE MESSAGE DISPATCHED SUCCESSFULLY</div>
+                        <div class="text-[11px] text-slate-300">Sender: ${messageWizardState.name} (${messageWizardState.email})</div>
+                        <div class="text-[11px] text-slate-400">Route : transmitted safely to hemanthpasumarthi8@gmail.com</div>
+                    `;
+                    historyEl.appendChild(successBox);
+                    historyEl.scrollTop = historyEl.scrollHeight;
+                }, 1000);
+            }
         }
     </script>
 </body>
